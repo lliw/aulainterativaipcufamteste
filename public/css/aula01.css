@@ -1,0 +1,270 @@
+/*********************************************
+ * Hack para a Transição dos Slides
+*********************************************/
+
+.reveal .slides > section {
+    display: block !important;
+}
+
+.reveal .slides > section #tpc01_01_01 {
+    display: block !important;
+}
+
+.reveal .slides > section #tpc01_01_04 {
+    display: block !important;
+}
+
+.reveal .slides > section #tpc03_03_03 {
+    display: block !important;
+}
+
+.reveal .slides > section #tpc03_03_04 {
+    display: block !important;
+}
+
+.reveal .slides > section #tpc03_08 {
+    display: block !important;
+}
+
+.reveal .slides > section #tpc03_09 {
+    display: block !important;
+}
+
+/*********************************************
+ * gambiarra dos strings
+*********************************************/
+.ball {
+    border: 1px transparent;
+    background-color: orangered;
+    opacity: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    text-align: center; 
+    font-size: 20px;
+}
+.ballvisible {
+    border: 1px transparent;
+    background-color: orangered;
+    opacity: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    text-align: center; 
+    font-size: 20px;
+}
+#ball1 {
+    top: 135px;
+    left: 85px;
+}
+#ball1:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 152px;
+    top: 195px;
+    text-align: left;
+}
+#ball1:hover:after{
+    content: 'Posição: 0 \A Conteúdo: \"A\"';
+}
+
+#ball2 {
+    top: 137px;
+    left: 147px;
+}
+#ball2:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 197px;
+    text-align: left;
+}
+#ball2:hover:after{
+    content: 'Posição: 1 \A Conteúdo: \"m\"';
+}
+
+#ball3 {
+    top: 160px;
+    left: 212px;
+}
+#ball3:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 220px;
+    text-align: left;
+}
+#ball3:hover:after{
+    content: 'Posição: 2 \A Conteúdo: \"o\"';
+}
+
+#ball4 {
+    top: 194px;
+    left: 268px;
+}
+#ball4:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 254px;
+    text-align: left;
+}
+#ball4:hover:after{
+    content: 'Posição: 3 \A Conteúdo: \" \" ';
+}
+#ball5 {
+    top: 230px;
+    left: 315px;
+}
+#ball5:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 290px;
+    text-align: left;
+}
+#ball5:hover:after{
+    content: 'Posição: 4 \A Conteúdo: "o"';
+}
+
+#ball6 {
+    top: 273px;
+    left: 362px;
+}
+#ball6:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 332px;
+    text-align: left;
+}
+#ball6:hover:after{
+    content: 'Posição: 5 \A Conteúdo: \" \" ';
+}
+
+#ball7 {
+    top: 273px;
+    left: 427px;
+}
+#ball7:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 332px;
+    text-align: left;
+}
+#ball7:hover:after{
+    content: 'Posição: 6 \A Conteúdo: \"P\" ';
+}
+
+#ball8 {
+    top: 255px;
+    left: 490px;
+}
+#ball8:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 310px;
+    text-align: left;
+}
+#ball8:hover:after{
+    content: 'Posição: 7 \A Conteúdo: \"y\" ';
+}
+
+#ball9 {
+    top: 230px;
+    left: 552px;
+}
+#ball9:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 290px;
+    text-align: left;
+}
+#ball9:hover:after{
+    content: 'Posição: 8 \A Conteúdo: \"t\" ';
+}
+
+#ball10 {
+    top: 214px;
+    left: 620px;
+}
+#ball10:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 274px;
+    text-align: left;
+}
+#ball10:hover:after{
+    content: 'Posição: 9 \A Conteúdo: \"h\" ';
+}
+
+#ball11 {
+    top: 205px;
+    left: 686px;
+}
+#ball11:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 265px;
+    text-align: left;
+}
+#ball11:hover:after{
+    content: 'Posição: 10 \A Conteúdo: \"o\" ';
+}
+
+#ball12 {
+    top: 231px;
+    left: 743px;
+}
+#ball12:hover {
+    color: white;
+    border-radius: 0px;
+    opacity: 100%;
+    width: 150px;
+    top: 295px;
+    text-align: left;
+}
+#ball12:hover:after{
+    content: 'Posição: 11 \A Conteúdo: \"n\" ';
+}
+
+
+/*********************************************
+ * gambiarra de animaçao
+*********************************************/
+
+.animation2{
+    background-image: url("imgipc/process.png"); 
+    background-position: top; 
+    background-size: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+.animation2in{
+    border-color: orangered; 
+    border-style: solid; 
+    border-width: 5px; 
+    height: 230px; 
+    width: 100px; 
+    position: absolute;
+}

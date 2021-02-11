@@ -1,0 +1,754 @@
+/*********************************************
+ * Caixa de diálogo do Slide
+*********************************************/
+.boxipc{
+    background-color: blue;
+    text-align: left;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+
+    position: relative;
+	border-radius: .4em;
+
+}
+.boxipc:after{
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-right-color: blue;
+	border-left: 0;
+	margin-top: -7px;
+    margin-left: -7px;   
+}
+
+.boxipctext{
+    background-color: teal;
+    text-align: left;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+    line-height: normal;
+
+    position: relative;
+	border-radius: .4em;
+
+}
+.boxipctext:after{
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-right-color: teal;
+	border-left: 0;
+	margin-top: -7px;
+    margin-left: -7px;   
+}
+
+
+.boxipcleft{
+    text-align: left;
+    padding: 15px 20px 15px 20px;
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+    
+}
+
+/*********************************************
+ * Tratamento de Imagens
+*********************************************/
+
+.imgipc{
+    padding: 10px 10px 10px 10px;
+}
+
+.imgipcleft{
+    padding: 0px 10px 0px 10px;
+    float: left;   
+}
+
+.imgipcright{
+    padding: 0px 10px 0px 10px;
+    float: right;   
+}
+
+#needbg{
+    margin: 0px 10px 10px 0px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    border-radius: 15px;
+}
+#needbggreen{
+    margin: 0px 10px 10px 0px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    border-radius: 15px;
+    border-color: yellowgreen;
+    border-width: 5px;
+    border-style: solid;
+}
+#needbgred{
+    margin: 0px 10px 10px 0px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    border-radius: 15px;
+    border-color: tomato;
+    border-width: 5px;
+    border-style: solid;
+}
+#needbgblue{
+    margin: 0px 10px 10px 0px;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    border-radius: 15px;
+    border-color: teal;
+    border-width: 5px;
+    border-style: solid;
+}
+/*********************************************
+ * Tratamento de Textos
+*********************************************/
+.titleipc{
+    color: orangered;
+    font-size: 50px;
+    text-align: left;
+    font-family: sans-serif;
+    padding: 15px 20px 15px 20px;
+
+}
+
+.textipc {
+    text-align: left;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;  
+}
+#default {
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+}
+#font30px {
+    padding: 15px 20px 15px 20px;
+    font-size: 30px;
+}
+#box {
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    width: 45%;
+    display: inline-table;
+}
+#box {
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    width: 45%;
+    display: inline-table;
+} 
+#boxblue {
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    width: 45%;
+    display: inline-table;
+    height: 275px;
+    background-color: teal;
+}  
+#font16px {
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+}
+#intable{
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+}
+#btnred {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    background-color: tomato;  
+}
+#btngreen {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    background-color: yellowgreen;  
+}
+#btn {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    font-family: sans-serif;  
+}
+#btn:hover{
+    background-color: orange;
+}
+.selbtn{
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    font-family: sans-serif;  
+    border: solid 3px orange;
+}
+.selbtn:hover{
+    background-color: orange;
+}
+.selgreen{
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    font-family: sans-serif;  
+    background-color: yellowgreen;
+}
+.selred{
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    font-family: sans-serif;  
+    background-color: tomato;
+}
+
+.textoff{
+    font-size: 30px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+}
+#blue{
+    color: teal;
+}
+#orange{
+    color: orangered;
+}
+/*classes de span*/
+.orangered {
+    color: orangered;
+}
+.b{
+    font-weight: bolder;
+}
+.i{
+    font-style: italic;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.centerbig{
+    text-align: center;
+    font-size: larger;
+}
+.black{
+    color: black;
+}
+.orange {
+    color: orange;
+}
+.orangeb {
+    color: orange;
+    font-weight: bolder;
+}
+.white {
+    color: white;
+}
+.whiteb {
+    color: white;
+    font-weight: bolder; 
+}
+.blueb {
+    color: teal;
+    font-weight: bolder; 
+}
+.center{
+    text-align: center;
+}
+.highlightblue{
+    background-color: teal;
+}
+.highlightgreen{
+    background-color: yellowgreen;
+}
+.highlightorange{
+    background-color: orange;
+}
+.highlightred{
+    background-color: tomato;
+}
+.highlightbox{
+    border: orangered solid 1px;
+}
+.lgrayi{
+    color: lightgrey;
+    font-style: italic;
+}
+/*********************************************
+ * Botões / Caixa de Diálogo dos Alunos
+*********************************************/
+
+.buttonipcstart{
+    background-color: orangered;
+    text-align: center;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+
+    position: relative;
+	border-radius: .4em;
+}
+.buttonipcstart:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-left-color: orangered;
+	border-right: 0;
+	margin-top: -7px;
+    margin-right: -7px;
+}
+.buttonipcstart:hover{
+    background-color: orange;
+}
+.buttonipcstart:hover:after{
+	border-left-color: orange;
+}
+
+
+
+.buttonipc{
+    background-color: orangered;
+    text-align: right;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+
+    position: relative;
+	border-radius: .4em;
+}
+.buttonipc:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-left-color: orangered;
+	border-right: 0;
+	margin-top: -7px;
+    margin-right: -7px;
+}
+.buttonipc:hover{
+    background-color: orange;
+}
+.buttonipc:hover:after{
+	border-left-color: orange;
+}
+
+.buttonipctest{
+    background-color: orangered;
+    text-align: right;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+    position: absolute;
+    border-radius: .4em;
+
+}
+.buttonipctest:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-left-color: orangered;
+	border-right: 0;
+	margin-top: -7px;
+    margin-right: -7px;
+}
+.buttonipctest:hover{
+    background-color: orange;
+}
+.buttonipctest:hover:after{
+	border-left-color: orange;
+}
+
+#twoinlinel{
+    width: 40%;
+    float: left;
+    text-align: left;
+}
+
+#twoinliner{
+    width: 40%;
+    float: right;
+}
+
+.buttonipcback{
+    background-color: blue;
+    text-align: right;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+
+    position: relative;
+	border-radius: .4em;
+}
+.buttonipcback:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 3px solid transparent;
+	border-left-color: blue;
+	border-right: 0;
+	margin-top: -3px;
+    margin-right: -3px;    
+}
+.buttonipcback:hover{
+    background-color: dodgerblue;
+}
+.buttonipcback:hover:after{
+	border-left-color: dodgerblue;
+}
+
+.reveal a {
+  color: yellowgreen;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+.reveal a:hover {
+  color: tomato;
+  text-shadow: none;
+  border: none; 
+}
+
+/*********************************************
+ * Barra de Progresso
+*********************************************/
+.reveal .progress {
+   height: 10px; 
+   background: rgba(0, 0, 255, 0.2);
+   color: orangered; 
+}
+  
+/*********************************************
+* Plano de Fundo
+*********************************************/
+@media print {
+    .backgrounds {
+        background-color: #fff; 
+    } 
+}
+
+/*********************************************
+* Listas
+*********************************************/
+
+.reveal ol {
+  list-style-type: decimal; }
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul li,
+.reveal ol li{
+    color: orange;
+}
+
+.reveal ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul ul {
+  list-style-type: circle; }
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+/*********************************************
+* Gambiarra de Código
+*********************************************/
+
+.reveal pre {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    font-family: monospace;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#cemporcento{
+    width: auto;
+    margin: 0%;
+    box-shadow: none;
+    padding: 0%;
+}
+
+.reveal code {
+    font-family: monospace;
+    text-transform: none;
+}
+  
+.reveal pre code {
+    display: block;
+    padding: 5px;
+    overflow: auto;
+    max-height: 250px;
+    word-wrap: normal;
+}
+
+#inwindow{
+    max-height: 70px;
+}
+.mimiccode{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    font-family: monospace;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    text-transform: none;
+    padding: 5px;
+    overflow: auto;
+    max-height: 250px;
+    word-wrap: normal;
+    color: black;
+}
+
+.mimiccode1{
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    text-align: left;
+    font-family: monospace;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    text-transform: none;
+    padding: 5px;
+    overflow: auto;
+    max-height: 250px;
+    word-wrap: normal;
+    color: black;
+}
+
+
+
+/* Janela de ambiente de codificação */
+
+.windowpy{
+    width: 500px; 
+    background-color: white; 
+    border-left: black solid 1px; 
+    border-right: black solid 1px; 
+}
+
+#headpy{
+    border-top: black solid 1px; 
+}
+#tailpy{
+    border-bottom: black solid 1px; 
+}
+#bgpy{
+    border: none;
+    text-align: center;
+    margin: auto; 
+    background-color: black;
+}
+
+.problembox{
+    color: white; 
+    display: inline-table; 
+    width: auto;
+}
+
+#sidebox{
+    width: 40%;
+}
+#tablearea{
+    height: 240px; 
+    background-color: teal;
+    text-align: left;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+
+/*div dos exemplos*/
+.codeareaexe{
+    height: 200px; 
+    width: 40%;
+}
+
+/*div dos problemas*/
+.codeareapro{
+    width: 95%;
+    height: 150px; 
+}
+
+/*div das demonstrações dos broblemas*/
+.codebox {
+    width: 45%; 
+    background-color: teal;
+    text-align: left;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+
+    display: inline-table; 
+}
+#small {
+    height: 255px;
+}
+#smally {
+    height: 200px;
+}
+#big {
+    height: 275px;
+}
+
+
+/*div da seleção de figuras e codigos*/
+.selectboxbtn {
+    height: 200px;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    font-size: 16px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+    border-color: teal;
+    border-width: 3px;
+    border-style: solid;
+
+    display: inline-table; 
+}
+.selectboxbtn:hover{
+    background-color: orange;
+}
+#smallcenter {
+    width: 30%;
+    text-align: center;
+}
+#smallleft {
+    width: 30%;
+    text-align: left;
+}
+#bigcenter {
+    width: 40%;
+    text-align: center;
+} 
+
+/*div de figuras e códigos selecionados certo e errado*/
+.selectbox{ 
+    height: 200px;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    font-size: 16px;
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+    border-width: 3px;
+    border-style: solid;
+
+    display: inline-table; 
+}
+#smallgreencenter{
+    width: 30%;
+    border-color: yellowgreen;
+    background-color: yellowgreen; 
+    text-align: center;
+} 
+#smallredcenter{
+    width: 30%;
+    border-color: tomato;
+    background-color: tomato;
+    text-align: center; 
+}
+#smallgreenleft {
+    width: 30%;
+    border-color: yellowgreen;
+    background-color: yellowgreen;
+    text-align: left; 
+} 
+#smallredleft {
+    width: 30%;
+    border-color: tomato;
+    background-color: tomato;
+    text-align: left; 
+} 
+#biggreencenter{
+    width: 40%;
+    border-color: yellowgreen;
+    background-color: yellowgreen;
+    text-align: center;
+}
+#bigredcenter {
+    width: 40%;
+    border-color: tomato;
+    background-color: tomato;
+    text-align: center;
+}
+
+
+/*********************************************
+* Gambiarra de Tabela
+*********************************************/
+
+
+.reveal table {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  
+  .reveal table th {
+    font-weight: bold; }
+  
+  .reveal table th,
+  .reveal table td {
+    text-align: left;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-bottom: 1px solid; 
+    border-right: 1px solid ; }
+  
+  .reveal table th[align="center"],
+  .reveal table td[align="center"] {
+    text-align: center; }
+  
+  .reveal table th[align="right"],
+  .reveal table td[align="right"] {
+    text-align: right; }
+  
