@@ -252,7 +252,7 @@
 *********************************************/
 
 .animation2{
-    background-image: url("imgipc/process.png"); 
+    background-image: url('../img/process.png'); 
     background-position: top; 
     background-size: 400px;
     background-repeat: no-repeat;
