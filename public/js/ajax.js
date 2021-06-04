@@ -1,4 +1,4 @@
-const fs = require('fs');
+import { writeFile } from 'fs';
 
 function loadDoc() {
   var teste = "null";
@@ -9,7 +9,7 @@ function loadDoc() {
      teste = this.responseText + "123 Teste";
 
   
-      fs.writeFile("ajax_info.txt", teste, function (err) {
+      writeFile("ajax_info.txt", teste, function (err) {
         if (err) return console.log(err);
         console.log('Hello World > helloworld.txt');
       });
