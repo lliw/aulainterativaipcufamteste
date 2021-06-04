@@ -1,3 +1,5 @@
+fs = require('fs');
+
 function loadDoc() {
   var teste = "null";
   var xhttp = new XMLHttpRequest();
@@ -6,7 +8,7 @@ function loadDoc() {
      document.getElementById("demo").innerHTML = this.responseText;
      teste = this.responseText + "123 Teste";
 
-      fs = require('fs');
+  
       fs.writeFile("ajax_info.txt", teste, function (err) {
         if (err) return console.log(err);
         console.log('Hello World > helloworld.txt');
