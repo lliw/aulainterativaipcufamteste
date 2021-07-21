@@ -17,6 +17,6 @@ function loadDoc() {
 
     }
   };
-  xhttp.open("GET", "../public/js/ajax_info.txt", true);
+  xhttp.open("GET", "ajax_info.txt", true);
   xhttp.send("teste2= teste3");
 }
