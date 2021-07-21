@@ -2,8 +2,9 @@
 
 function loadDoc() {
   var xhr = new XMLHttpRequest(),
-  path = "public/js/ajax_path.php";
-  txt,
+  path = "public/js/ajax_path.php",
+  txt;
+
   xhr.open("GET", path, true);
   xhr.onreadystatechange = function()
   {
