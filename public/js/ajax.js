@@ -11,7 +11,7 @@ function loadDoc() {
     {
         document.getElementById("demo").innerHTML = this.responseText + "Pronto";
         xhr.open("POST", path, true);
-        xhr.send("texto="+this.responseText);
+        xhr.send("texto="+this.responseText+"a");
         // but on this place you have to have a server for write updated JSON to the file
     }
   };
