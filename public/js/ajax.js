@@ -14,11 +14,11 @@ function loadDoc() {
         xhr.send("texto="+this.responseText);
         // but on this place you have to have a server for write updated JSON to the file
     }
-  }
+  };
   xhr.send(null);
 
 
-};
+}
 
 
 
@@ -51,4 +51,3 @@ function loadDoc() {
   xhttp.open("GET", "public/js/ajax_info.txt", true);
   xhttp.send("ave= roxinol");
   */
-}
