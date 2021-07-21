@@ -1,12 +1,12 @@
 //import { writeFile } from 'fs';
 
 function loadDoc() {
-  var teste = "null";
+  //var teste = "null";
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
-     teste = this.responseText + "123 Teste";
+     //document.getElementById("demo").innerHTML = this.responseText;
+     //teste = this.responseText + "123 Teste";
 
   
       /*fs.writeFile("ajax_info.txt", teste, function (err) {
@@ -17,6 +17,6 @@ function loadDoc() {
 
     }
   };
-  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.open("GET", "public/js/ajax_info.txt", true);
   xhttp.send("teste2= teste3");
 }
