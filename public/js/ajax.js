@@ -8,6 +8,9 @@ function loadDoc() {
     if (this.readyState == 4 && this.status == 200) {
      console.log(this.responseText); 
      document.getElementById("demo").innerHTML = this.responseText + "Pronto";
+     xhttp.open("GET", "public/js/ajax_info.txt", true);
+     xhttp.send("ave= roxinol");
+
      
      //teste = this.responseText + "123 Teste";
 
