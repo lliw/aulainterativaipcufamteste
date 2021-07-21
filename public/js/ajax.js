@@ -1,4 +1,4 @@
-import { writeFile } from 'fs';
+//import { writeFile } from 'fs';
 
 function loadDoc() {
   var teste = "null";
@@ -9,14 +9,14 @@ function loadDoc() {
      teste = this.responseText + "123 Teste";
 
   
-      writeFile("ajax_info.txt", teste, function (err) {
+      /*fs.writeFile("ajax_info.txt", teste, function (err) {
         if (err) return console.log(err);
         console.log('Hello World > helloworld.txt');
-      });
+      });*/
 
 
     }
   };
   xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
+  xhttp.send("Teste");
 }
