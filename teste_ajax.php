@@ -10,9 +10,9 @@ if(!empty($_POST['data'])){
     $fname = "teste.txt";
     echo " arquivo: ".$fname;
     $file = fopen( "../".$fname, 'w');//creates new file
-    echo " ".$file;
-    echo " ".fwrite($file, $data);
-    echo " ";
+    echo " ".isset($file);
+    $w = fwrite($file, $data);
+    echo " ".$w;
     fclose($file);
 }
 ?>
