@@ -9,7 +9,7 @@ if(!empty($_POST['data'])){
     //$fname = mktime() . ".txt";//generates random name
     $fname = "upload/teste.txt";
     echo " arquivo: ".$fname;
-    $file = fopen( $fname, 'w');//creates new file
+    $file = fopen( $fname, 'w+');//creates new file
     echo " .".isset($file);
     $w = fwrite($file, $data);
     echo ". .".isset($w);
