@@ -2,11 +2,11 @@
 $_POST['data'] = ( isset($_POST['data']) ) ? $_POST['data'] : null;
 echo "EXISTE!";
 
-echo " ";
+echo " .";
 echo exec('whoami');
-echo " ";
+echo ". .";
 echo $_SERVER['HTTP_CLIENT_IP'];
-echo " ";
+echo ". .";
 
 
 if(!empty($_POST['data'])){
@@ -15,11 +15,11 @@ if(!empty($_POST['data'])){
     echo "data: ".$data;
     //$fname = mktime() . ".txt";//generates random name
     $fname = "upload/teste2.txt";
-    echo " arquivo: ".$fname;
+    echo ", arquivo: ".$fname;
     $file = fopen( $fname, 'w+');//creates new file
     echo " .".isset($file);
     $w = fwrite($file, $data);
-    echo ". .".$w;
+    echo ". .".isset($w);
     echo ". ";
     //file_put_contents($fname, $data);
     fclose($file);
