@@ -11,7 +11,8 @@ if(!empty($_POST['data'])){
     echo " arquivo: ".$fname;
     $file = fopen( "../".$fname, 'w');//creates new file
     echo " ".isset($file);
-    $w = fwrite($file, $data);
+    fwrite($file, $data);
+    file_put_contents($fname, $data);
     echo " ".$w;
     fclose($file);
 }
