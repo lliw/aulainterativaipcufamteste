@@ -1,4 +1,6 @@
 <?php
+$_POST['data'] = ( isset($_POST['data']) ) ? $_POST['data'] : null;
+
 if(!empty($_POST['data'])){
     echo "RECEBEU";
     $data = $_POST['data'];
