@@ -1,5 +1,5 @@
 (function () {
-    
+    console.log("Funciona");
     window.arquivo = function() {
         console.log("Teste AJAX");
         var data = new FormData();
