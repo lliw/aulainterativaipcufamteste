@@ -1,0 +1,175 @@
+/*Atividade String*/
+.botao_bola {
+    border: 5px solid lightblue;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    width: 50px; 
+    height: 50px;
+}  
+.botao_bola:hover {
+    background-color: lightblue;
+    border-radius: 5px;
+    width: 100px;
+    height: fit-content;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#bola_0{
+    left: 15px; 
+    top: 15px;
+    z-index: 12;
+}
+#bola_0:hover{
+    top: 75px
+}
+#bola_0:hover:after {
+    content: 'Posição: 0 \A Conteúdo: \"A\"';
+}
+
+#bola_1{
+    left: 77px; 
+    top: 17px;
+    z-index: 11;
+}
+#bola_1:hover{
+    top: 77px
+}
+#bola_1:hover:after {
+    content: 'Posição: 1 \A Conteúdo: \"m\"';
+}
+
+#bola_2{
+    left: 139px; 
+    top: 37px;
+    z-index: 10;
+}
+#bola_2:hover{
+    top: 97px
+}
+#bola_2:hover:after {
+    content: 'Posição: 2 \A Conteúdo: \"o\"';
+}
+
+#bola_3{
+    left: 193px; 
+    top: 72px;
+    z-index: 9;
+}
+#bola_3:hover{
+    top: 132px
+}
+#bola_3:hover:after {
+    content: 'Posição: 3 \A Conteúdo: \" \"';
+}
+
+#bola_4{
+    left: 240px; 
+    top: 107px;
+    z-index: 8;
+}
+#bola_4:hover{
+    top: 167px
+}
+#bola_4:hover:after {
+    content: 'Posição: 4 \A Conteúdo: \"o\"';
+}
+
+#bola_5{
+    left: 285px; 
+    top: 149px;
+    z-index: 7;
+}
+#bola_5:hover{
+    top: 209px
+}
+#bola_5:hover:after {
+    content: 'Posição: 5 \A Conteúdo: \" \"';
+}
+
+#bola_6{
+    left: 349px; 
+    top: 149px;
+    z-index: 6;
+}
+#bola_6:hover{
+    top: 209px
+}
+#bola_6:hover:after {
+    content: 'Posição: 6 \A Conteúdo: \"P\"';
+}
+
+#bola_7{
+    left: 411px; 
+    top: 132px;
+    z-index: 5;
+}
+#bola_7:hover{
+    top: 192px
+}
+#bola_7:hover:after {
+    content: 'Posição: 7 \A Conteúdo: \"y\"';
+}
+
+#bola_8{
+    left: 472px; 
+    top: 108px;
+    z-index: 4;
+}
+#bola_8:hover{
+    top: 168px
+}
+#bola_8:hover:after {
+    content: 'Posição: 8 \A Conteúdo: \"t\"';
+}
+
+#bola_9{
+    left: 538px; 
+    top: 91px;
+    z-index: 3;
+}
+#bola_9:hover{
+    top: 151px
+}
+#bola_9:hover:after {
+    content: 'Posição: 9 \A Conteúdo: \"h\"';
+}
+
+#bola_10{
+    left: 603px; 
+    top: 83px;
+    z-index: 2;
+}
+#bola_10:hover{
+    top: 143px
+}
+#bola_10:hover:after {
+    content: 'Posição: 10 \A Conteúdo: \"o\"';
+}
+
+#bola_11{
+    left: 658px; 
+    top: 108px;
+    z-index: 1;
+}
+#bola_11:hover{
+    top: 168px
+}
+#bola_11:hover:after {
+    content: 'Posição: 11 \A Conteúdo: \"n\"';
+}
+
+/*Atividade Problemas Algorítmicos*/
+.caixa_branca{
+    position: absolute; 
+    background-color: white; 
+    /*border: 1px black solid;*/ 
+}
+
+/*Atividade Processos de Programação*/
+.caixa_verde{
+    position: absolute; 
+    border: 5px lightgreen solid; 
+    border-radius: 15px;
+}

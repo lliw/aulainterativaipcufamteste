@@ -6,7 +6,7 @@
     text-align: left;
     color: white;
     padding: 15px 20px 15px 20px;
-    font-size: 30px;
+    font-size: 15px;
     margin: 0px 0px 0px 0px;
     font-family: sans-serif;
 
@@ -33,7 +33,7 @@
     text-align: left;
     color: white;
     padding: 15px 20px 15px 20px;
-    font-size: 20px;
+    font-size: 10px;
     margin: 0px 0px 0px 0px;
     font-family: sans-serif;
     line-height: normal;
@@ -60,7 +60,7 @@
 .boxipcleft{
     text-align: left;
     padding: 15px 20px 15px 20px;
-    font-size: 30px;
+    font-size: 15px;
     margin: 0px 0px 0px 0px;
     font-family: sans-serif;
     
@@ -122,7 +122,7 @@
 *********************************************/
 .titleipc{
     color: orangered;
-    font-size: 50px;
+    font-size: 25px;
     text-align: left;
     font-family: sans-serif;
     padding: 15px 20px 15px 20px;
@@ -137,27 +137,27 @@
 }
 #default {
     padding: 15px 20px 15px 20px;
-    font-size: 20px;
+    font-size: 10px;
 }
 #font30px {
     padding: 15px 20px 15px 20px;
-    font-size: 30px;
+    font-size: 15px;
 }
 #box {
     padding: 5px 5px 5px 5px;
-    font-size: 18px;
+    font-size: 9px;
     width: 45%;
     display: inline-table;
 }
 #box {
     padding: 5px 5px 5px 5px;
-    font-size: 18px;
+    font-size: 9px;
     width: 45%;
     display: inline-table;
 } 
 #boxblue {
     padding: 5px 5px 5px 5px;
-    font-size: 16px;
+    font-size: 8px;
     width: 45%;
     display: inline-table;
     height: 275px;
@@ -165,33 +165,34 @@
 }  
 #font16px {
     padding: 15px 20px 15px 20px;
-    font-size: 16px;
+    font-size: 8px;
 }
 #intable{
     padding: 5px 10px 5px 10px;
-    font-size: 20px;
+    font-size: 10px;
 }
 #btnred {
     padding: 5px 10px 5px 10px;
-    font-size: 20px;
+    font-size: 10px;
     background-color: tomato;  
 }
 #btngreen {
     padding: 5px 10px 5px 10px;
-    font-size: 20px;
+    font-size: 10px;
     background-color: yellowgreen;  
 }
 #btn {
     padding: 5px 10px 5px 10px;
-    font-size: 20px;
+    font-size: 10px;
     font-family: sans-serif;  
+    cursor: pointer;
 }
 #btn:hover{
     background-color: orange;
 }
 .selbtn{
     padding: 5px 10px 5px 10px;
-    font-size: 20px;
+    font-size: 10px;
     font-family: sans-serif;  
     border: solid 3px orange;
 }
@@ -200,19 +201,19 @@
 }
 .selgreen{
     padding: 5px 10px 5px 10px;
-    font-size: 20px;
+    font-size: 10px;
     font-family: sans-serif;  
     background-color: yellowgreen;
 }
 .selred{
     padding: 5px 10px 5px 10px;
-    font-size: 20px;
+    font-size: 10px;
     font-family: sans-serif;  
     background-color: tomato;
 }
 
 .textoff{
-    font-size: 30px; 
+    font-size: 15px; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
 }
@@ -297,7 +298,7 @@
     text-align: center;
     color: white;
     padding: 10px 10px 10px 10px;
-    font-size: 30px;
+    font-size: 15px;
     margin: 0px 0px 0px 0px;
     font-family: sans-serif;
 
@@ -331,7 +332,7 @@
     text-align: right;
     color: white;
     padding: 10px 15px 10px 15px;
-    font-size: 30px;
+    font-size: 15px;
     margin: 0px 0px 0px 0px;
     font-family: sans-serif;
 
@@ -474,7 +475,7 @@
 
 .reveal ul li,
 .reveal ol li{
-    color: orange;
+    color: white;
 }
 
 .reveal ul ul {
@@ -499,7 +500,7 @@
     display: block;
     position: relative;
     width: 90%;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: left;
     font-family: monospace;
     line-height: 1.2em;
@@ -534,7 +535,7 @@
     display: block;
     position: relative;
     width: 90%;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: left;
     font-family: monospace;
     line-height: 1.2em;
@@ -551,7 +552,7 @@
 .mimiccode1{
     display: block;
     position: relative;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: left;
     font-family: monospace;
     line-height: 1.2em;
@@ -613,6 +614,12 @@
     width: 40%;
 }
 
+/*div dos exemplos*/
+.codeareaexe1{
+    height: 200px; 
+    width: 30%;
+}
+
 /*div dos problemas*/
 .codeareapro{
     width: 95%;
@@ -621,7 +628,7 @@
 
 /*div das demonstrações dos broblemas*/
 .codebox {
-    width: 45%; 
+    width: 30%; 
     background-color: teal;
     text-align: left;
     color: white;
@@ -648,7 +655,7 @@
     height: 200px;
     color: white;
     padding: 0px 0px 0px 0px;
-    font-size: 16px;
+    font-size: 8px;
     margin: 0px 0px 0px 0px;
     font-family: sans-serif;
     border-color: teal;
@@ -678,7 +685,7 @@
     height: 200px;
     color: white;
     padding: 0px 0px 0px 0px;
-    font-size: 16px;
+    font-size: 8px;
     margin: 0px 0px 0px 0px;
     font-family: sans-serif;
     border-width: 3px;

@@ -1,0 +1,338 @@
+/*Hack para a Transição dos Slides*/
+.reveal .slides > section {
+  display: block !important;
+}
+
+.reveal .slides > section > section {
+  display: block !important;
+}
+
+.reveal .slides > section > section > div {
+  display: block !important;
+}
+
+/*Plano de Fundo*/
+.backgrounds {
+    background-color: lightslategrey;
+    background-image:   url("../img/aula_00/code.png");
+    background-size:    100px;
+    background-repeat:  repeat;
+    opacity:            0.3;
+} 
+
+/*Escala dos slides*/
+.reveal .slides section,
+.reveal .slides section > section {
+  /*border: 1px solid black;*/ 
+  height: 720px; 
+  width:  960px; 
+}
+
+/*Barra de Progresso*/
+.reveal .progress {
+  border-style: dashed;
+  border-top-color: white;
+  border-top-width: 3px;
+  margin-top: 10px;
+  height: 10px; 
+  background: rgba(0, 0, 255, 0.2);
+  color: orangered; 
+}
+
+
+/*Caixas de Texto*/
+.titulo{
+  background-color: blue;
+  text-align:         left;
+  color:            white;
+  padding:            15px 20px 15px 20px;
+  font-size:          30px;
+  margin:             0px 0px 0px 0px;
+  font-family:        sans-serif;
+  font-weight:        bolder;
+
+  position:           relative;
+  border-radius:      10px;
+
+}
+.titulo:after{
+  content:              '';
+  position:             absolute;
+  left:                 0px;
+  top:                  15px;
+  width:                0;
+  height:               0;
+  border:               5px solid transparent;
+  border-right-color: blue;
+  border-left:          0;
+  margin-top:           -5px;
+  margin-left:          -5px;   
+}
+
+.texto{
+  background-color: darkblue;
+  text-align:         left;
+  color:            white;
+  padding:            15px 20px 15px 20px;
+  font-size:          18px;
+  margin:             0px 0px 0px 0px;
+  font-family:        sans-serif;
+  line-height:        normal;
+
+  position:           relative;
+  border-radius:      10px;
+}
+.texto:after{
+  content:              '';
+  position:             absolute;
+  left:                 0px;
+  top:                  15px;
+  width:                0;
+  height:               0;
+  border:               5px solid transparent;
+  border-right-color: darkblue;
+  border-left:          0;
+  margin-top:           -5px;
+  margin-left:          -5px;   
+}
+
+
+/*Botões*/
+.fala{
+  position: absolute;
+  border-radius: 10px; 
+  background-color: orange;
+  font-family: sans-serif;
+  bottom: 30px;
+  right:  0px;     
+  text-align:right; 
+  
+  padding: 10px;
+  margin-bottom: 5px;
+  width: fit-content;
+
+}
+.fala:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left-color: orange;
+  border-right: 0;
+  margin-top: -5px;
+  margin-right: -5px;
+
+}
+
+.botao_laranja {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: orangered;
+  border: none;
+  border-radius: 15px;
+} 
+.botao_laranja:hover {
+  background-color: red;
+  font-weight: bolder;
+} 
+.botao_laranja:active {
+  background-color: red;
+  transform: translateY(4px);
+}
+
+.botao_azul {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: lightblue;
+  border: none;
+  border-radius: 15px;
+} 
+.botao_azul:hover {
+  background-color: lightgreen;
+  font-weight: bolder;
+} 
+.botao_azul:active {
+  background-color: lightgreen;
+  transform: translateY(4px);
+}
+
+.botao_amarelo {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: yellow;
+  border: none;
+  border-radius: 15px;
+} 
+.botao_amarelo:hover {
+  background-color: red;
+  font-weight: bolder;
+} 
+.botao_amarelo:active {
+  background-color: red;
+  transform: translateY(4px);
+}
+
+.botao_verde {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: default ;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+}
+
+.botao_vermelho {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: default ;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+}
+
+/*Imagens*/
+.figurinha{
+  border: 3px solid white;
+  background-color: white;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 15px;
+  position: relative;
+}
+
+/*Texto*/
+.texto b{
+  color: orange;
+  font-weight: bolder;
+}
+b{
+  font-weight: bolder;
+}
+i{
+  font-style: italic;
+}
+a {
+  color: yellowgreen;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+a:hover {
+  color: tomato;
+  text-shadow: none;
+  border: none; 
+}
+.highlight {
+  background-color: lightgreen;
+}
+blockquote{
+  text-indent: 25px;
+}
+
+
+/*Código*/
+.reveal pre code{
+  border: none;
+  background-color: white;
+}
+
+#bloco_codigo{
+  width: 40%; 
+  height: 200px; 
+  overflow: auto; 
+  text-align: left; 
+  display: inline-block; 
+  font-family: monospace;
+}
+
+/*Tabela*/
+.reveal .tabela_ipc{
+  border: 3px solid orangered; 
+  border-radius: 15px; 
+  padding: 3px;
+  text-align: left; 
+  background-color: peru; 
+}
+.reveal .tabela_ipc tr th{
+  border: 3px solid red; 
+  font-weight: bolder;
+  border-radius: 5px; 
+  padding: 3px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+.reveal .tabela_ipc tr td{
+  border: 3px solid orangered; 
+  border-radius: 5px; 
+  padding: 3px;
+  color: white;
+}
+.bt{
+  background-color: orangered; 
+  cursor: pointer;
+}
+.bt:hover{
+  background-color: red; 
+}
+.verde{
+  background-color: green; 
+}
+.vermelho{
+  background-color: red; 
+}
+.reveal .tabela_ipc tr .td_sem_borda{
+  border: none; 
+  font-weight: bolder; 
+  text-align: center;
+}
+
+/*Inserção de texto*/
+.entrada{
+  color: white;
+  border: thin;
+  background-color: red;
+  font-size: inherit;
+  font-family: inherit;
+}
