@@ -13,7 +13,7 @@
           if(xhr.readyState == 4 && xhr.status == 200)
           {
             txt = this.responseText;
-            document.getElementById("demo").innerHTML = txt + "Pronto";
+            document.getElementById("demo").innerHTML = txt + "Pronto ";
             console.log("IS READY");
           }
         };
