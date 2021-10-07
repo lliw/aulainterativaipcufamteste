@@ -5,6 +5,8 @@ echo "EXISTE!";
 echo " ";
 echo exec('whoami');
 echo " ";
+echo $_SERVER['HTTP_CLIENT_IP'];
+echo " ";
 
 
 if(!empty($_POST['data'])){
