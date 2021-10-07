@@ -15,9 +15,9 @@
             txt = this.responseText;
             document.getElementById("demo").innerHTML = txt + "Pronto ";
             console.log("IS READY");
+            xhr.send(data);
           }
         };
-        xhr.send(data);
     }
     
 })();
