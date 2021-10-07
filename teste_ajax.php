@@ -2,6 +2,11 @@
 $_POST['data'] = ( isset($_POST['data']) ) ? $_POST['data'] : null;
 echo "EXISTE!";
 
+echo " ";
+echo exec('whoami');
+echo " ";
+
+
 if(!empty($_POST['data'])){
     echo "RECEBEU ";
     $data = $_POST['data'];
@@ -12,7 +17,7 @@ if(!empty($_POST['data'])){
     $file = fopen( $fname, 'w+');//creates new file
     echo " .".isset($file);
     $w = fwrite($file, $data);
-    echo ". .".isset($w);
+    echo ". .".$w;
     echo ". ";
     //file_put_contents($fname, $data);
     fclose($file);
