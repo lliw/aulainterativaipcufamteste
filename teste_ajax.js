@@ -7,7 +7,7 @@
         data.append("data" , "Testando");
 
         var xhr = new XMLHttpRequest();
-        xhr.open( 'post', '../teste_ajax.php', true );
+        xhr.open( 'post', 'teste_ajax.php', true );
         xhr.onreadystatechange = function()
         {
           if(xhr.readyState == 4 && xhr.status == 200)
