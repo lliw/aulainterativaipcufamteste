@@ -1,6 +1,13 @@
 (function () {
 
-    let log = "Registro do Percurso do estudante\n";
+    function ajax(log){
+        var data = new FormData();
+        data.append("data" , log);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open( 'post', 'public/upload/ajax.php', true );
+        xhr.send(data);
+    }
     
     function esteSlide(hs,vs,cs){
         let thislog =   "----------------------------------------\n" + 
@@ -8,7 +15,7 @@
                         "O estudante está no slide de indice "+ (hs+1) +"."+ (vs+1) +
                         "\nId: "+ cs.id +"\nTítulo: "+ cs.children["istitle"].innerText.trim()+"\n";
         console.log(thislog);
-        log = log + thislog
+        ajax(thislog);
     }
     
     Reveal.addEventListener( 'ready', function( event ) {
@@ -21,6 +28,7 @@
     window.mensagem = function(elemento,mensagem) {
        //alert(mensagem);
        console.log(mensagem);
+       ajax(`${mensagem}\n`);
 
         //TOPICO 1 SUBTOPICO 3 Variáveis da Memória do Computador - Atividade
         if(elemento.id == "bt_topico_1_3"){
@@ -86,6 +94,11 @@
            "Linha 5 | vida:"+vida_5+"| dano:"+dano_5+"\n"+
            "Linha 6 | vida:"+vida_6+"| dano:"+dano_6+"\n"+
            "Linha 7 | vida:"+vida_7+"| dano:"+dano_7+"\n");
+           ajax(`Linha 4 | vida: ${vida_4}| dano: ${dano_4}\n
+           Linha 5 | vida: ${vida_5}| dano: ${dano_5}\n
+           Linha 6 | vida: ${vida_6}| dano: ${dano_6}\n
+           Linha 7 | vida: ${vida_7}| dano: ${dano_7}\n`
+            );
         }
 
         //TOPICO 1 SUBTOPICO 4 Regras para criar um identificador - Atividade 1
@@ -402,7 +415,8 @@
 
         if(elemento.id == "bt_topico_2_2_b"){
             let entrada = document.getElementById("entrada_q").value;
-            console.log(entrada);
+            console.log("O estudante digitou o seguinte código: ", entrada, "\n");
+            ajax(`O estudante digitou: \n${entrada}\n`);
             document.getElementById("saida_r_1").innerHTML = entrada;
             document.getElementById("saida_r_2").innerHTML = entrada;
         }
@@ -646,7 +660,8 @@
         if(elemento.id == "bt_topico_3_3_e"){
             let code = "#Código digitado \n"+editAreaLoader.getValue("problema_codigo");
             editAreaLoader.setValue("problema_codigo_estudante",code);
-            console.log(code);
+            console.log("O estudante digitou o seguinte código: ", code, "\n");
+            ajax(`O estudante digitou o seguinte código: \n${code}\n`);
         }
 
         //
@@ -752,6 +767,7 @@
             let opd = Number(document.getElementById("op_d").value.trim());
             let color = "";
             console.log(opa, opb, opc, opd);
+            ajax(`O estudante digitou: \n${opa}, ${opb}, ${opc}, ${opd}\n`);
 
             if(opa == 36){
                 color = "green";

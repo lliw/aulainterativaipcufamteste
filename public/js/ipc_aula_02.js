@@ -312,6 +312,35 @@
            console.log(code);
         }
 
+        //
+        if(elemento.id == "bt_problema_2"){
+           let code = "#Código digitado \n"+editAreaLoader.getValue("problema_2_input");
+           editAreaLoader.setValue("problema_2_output",code);
+           console.log(code);
+        }
+
+        //
+        if(elemento.id == "bt_problema_3"){
+            let code = "#Código digitado \n"+editAreaLoader.getValue("problema_3_input");
+            editAreaLoader.setValue("problema_3_output",code);
+            console.log(code);
+        }
+
+        //
+        if(elemento.id == "bt_problema_4"){
+            let code = "#Código digitado \n"+editAreaLoader.getValue("problema_4_input");
+            editAreaLoader.setValue("problema_4_output",code);
+            console.log(code);
+        }
+
+        //
+        if(elemento.id == "bt_problema_5"){
+            let code = "#Código digitado \n"+editAreaLoader.getValue("problema_5_input");
+            editAreaLoader.setValue("problema_5_output",code);
+            console.log(code);
+        }
+ 
+
 
 
 
