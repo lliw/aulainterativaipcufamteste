@@ -28,7 +28,8 @@ $estudante_ip = str_replace(array(":"), '', $estudante_ip);
 //Escrevendo em arquivo
 if(!empty($_POST['data'])){
     $data = $_POST['data'];
-    $fname = $estudante_ip.".txt";
+    //$fname = $estudante_ip.".txt";
+    $fname = "teste.txt";
     echo "Dado escrito no arquivo: ".$fname."\n";
     echo $data;
     $file = fopen( $fname, 'a+');
