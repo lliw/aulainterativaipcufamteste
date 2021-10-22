@@ -5,7 +5,7 @@
         data.append("data" , log);
 
         var xhr = new XMLHttpRequest();
-        xhr.open( 'post', 'public/upload/ajax.php', true );
+        xhr.open( 'post', 'upload/ajax.php', true );
         xhr.send(data);
     }
     
