@@ -1,5 +1,0 @@
-----------------------------------------
-Thu Oct 21 2021 15:39:35 GMT-0300 (Horário Padrão de Brasília)
-O estudante está no slide de indice 1.1
-Id: home
-Título: Aula 01 - Variáveis e Estrutura Sequencial

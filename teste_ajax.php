@@ -15,7 +15,7 @@ if(!empty($_POST['data'])){
     echo "data: ".$data;
     //$fname = mktime().".txt";//generates random name
     //$fname = "upload/teste2.txt";
-    $fname = "upload/".exec('whoami').".txt";
+    $fname = "upload/".mktime().exec('whoami').".txt";
     echo ", arquivo: ".$fname;
     $file = fopen( $fname, 'w+');//creates new file
     echo " .".isset($file);
