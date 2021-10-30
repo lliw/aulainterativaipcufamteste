@@ -33,7 +33,7 @@
         //Escrevendo em arquivo
         if(!empty($_POST['data'])){
             $data = $_POST['data'];
-            $fname = "piloto/".$estudante_ip.".txt";
+            $fname = "piloto-".$estudante_ip.".txt";
             echo "Dado escrito no arquivo: ".$fname."\n";
             echo $data;
             $file = fopen( $fname, 'a+');
